@@ -91,6 +91,9 @@ main {
 	margin: 0;
 	width: 100%;
 	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 }
 
 .services2 {
@@ -99,6 +102,9 @@ main {
 	margin: 0;
 	width: 100%;
 	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 }
 
 .services3 {
@@ -160,7 +166,7 @@ main {
 	max-width: 100%;
 }
 
-.portfolio2 .card-portfolio h3 {
+.portfolio2 .card-portfolio h2 {
 	text-align: center;
 }
 
@@ -431,6 +437,15 @@ main {
 
 /* Contact */
 
+.contact-title {
+	color: white;
+	font-size: 3rem;
+	text-shadow: 2px 2px white;
+	text-transform: uppercase;
+	-webkit-text-stroke: 1px white;
+	-webkit-text-fill-color: transparent;
+}
+
 .contact-container {
 	height: 100%;
 	display: flex;
@@ -468,6 +483,32 @@ main {
 
 .contact-form {
 	padding: 2rem;
+}
+
+.social-icons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.social-icons a {
+	color: white;
+	font-size: 2rem;
+	margin: 0 1rem;
+	transition: color 0.2s;
+}
+
+.fa-youtube:hover {
+	color: #c4302b;
+}
+.fa-linkedin:hover {
+	color: #0e76a8;
+}
+.fa-instagram:hover {
+	color: #ff0069;
+}
+.fa-twitter:hover {
+	color: #00acee;
 }
 
 .contact-form-img {
