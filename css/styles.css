@@ -429,6 +429,52 @@ main {
 	color: white;
 }
 
+/* Contact */
+
+.contact-container {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5rem;
+}
+
+.contact-form-container {
+	border: 10px solid black;
+	background-color: white;
+}
+
+.contact-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+}
+
+.info-box {
+	display: flex;
+	align-items: top;
+}
+
+.info-box-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.info-box i {
+	margin-right: 1rem;
+	font-size: 1.5rem;
+}
+
+.contact-form {
+	padding: 2rem;
+}
+
+.contact-form-img {
+	background-image: url('../assets/img/services-index.jpg');
+	background-position: top;
+	background-size: cover;
+}
 
 /* Footer */
 

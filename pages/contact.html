@@ -38,7 +38,85 @@
 
 		<main>
 			<section>
-				<h1>CONTACTO</h1>
+				<div class="container-fluid contact-container">
+					<div class="container contact-form-container bg-black text-white">
+						<div class="contact-form-container-border">
+							<div class="row">
+								<div class="col-12 col-md-6 contact-form">
+									<div class="row pb-3">
+										<h1>Contacto</h1>
+									</div>
+									<div class="row pb-3">
+										<div class="contact-info">
+											<div class="info-box">
+												<i class="fas fa-phone-alt"></i>
+												<div class="info-box-text">
+													<p>Teléfono:</p>
+													<p>(+56) 9 1234 1234</p>
+												</div>
+											</div>
+											<div class="info-box">
+												<i class="fas fa-envelope"></i>
+												<div class="info-box-text">
+													<p>Correo: </p>
+													<p>ejemplo@correo.com</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row mb-3">
+										<div class="contact-info">
+											<div class="info-box">
+												<i class="fas fa-map-marker-alt"></i>
+												<div class="info-box-text">
+													<p>Dirección: </p>
+													<p>Calle Domicilio 1234, Ciudad, Pais</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<form>
+										<div class="row mb-3">
+											<h2>Envianos un mensaje:</h2>
+										</div>
+										<div class="row mb-3">
+											<div class="col">
+												<label for="nombre" class="form-label">Nombre*</label>
+												<input type="text" class="form-control" id="nombre" name="nombre" required />
+											</div>
+											<div class="col">
+												<label for="apellido" class="form-label">Apellido*</label>
+												<input type="text" class="form-control" id="apellido" name="apellido" required />
+											</div>
+										</div>
+										<div class="row mb-3">
+											<div class="col">
+												<label for="email" class="form-label">Email*</label>
+												<input type="email" class="form-control" id="email" name="email" required />
+											</div>
+											<div class="col">
+												<label for="prefijo" class="form-label">Prefijo</label>
+												<input type="text" class="form-control" id="prefijo" name="prefijo" />
+											</div>
+											<div class="col">
+												<label for="telefono" class="form-label">Teléfono*</label>
+												<input type="tel" class="form-control" id="telefono" name="telefono" required />
+											</div>
+										</div>
+										<div class="row mb-3">
+											<div class="col">
+												<label for="comentarios" class="form-label">Comentarios*</label>
+												<textarea class="form-control" id="comentarios" name="comentarios" rows="3" required></textarea>
+											</div>
+										</div>
+										<button type="submit" class="btn btn-outline-light">Enviar</button>
+									</form>
+								</div>
+								<div class="col-12 col-md-6 contact-form-img"></div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</section>
 		</main>
 
@@ -53,5 +131,6 @@
 		</footer>
 
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+		<script src="https://kit.fontawesome.com/93b6d8b5a4.js" crossorigin="anonymous"></script>
 	</body>
 </html>
