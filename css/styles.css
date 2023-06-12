@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;700&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
@@ -84,7 +86,7 @@ main {
 	z-index: 2;
 }
 
-.main-title {
+/* .main-title {
 	position: absolute;
 	z-index: 2;
 	font-size: 4rem;
@@ -97,6 +99,72 @@ main {
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
+} */
+
+.main-title {
+	position: absolute;
+	z-index: 2;
+	font-family: 'Oswald', sans-serif;
+	font-size: 5rem;
+	overflow: hidden;
+	color: white;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-color: transparent;
+}
+
+.main-title::after {
+	content: '';
+	display: inline-block;
+	animation: animation 22s steps(15) infinite;
+	width: 25px;
+	color: lightseagreen;
+}
+
+.main-title::before {
+	display: inline-block;
+	content: '';
+	width: 2px;
+	height: 100%;
+	background-color: white;
+	position: absolute;
+	right: 0;
+	animation: blinking 0.5s linear alternate infinite;
+}
+
+/* Reparar el salto en la anomacion despues de Diseñador */
+  
+@keyframes animation {
+	0%,
+	15% {
+		content: 'Publicista';
+		width: 7.5ch;
+	}
+	20%,
+	35% {
+		width: 0ch;
+	}
+	40%,
+	55% {
+		content: 'Fotografo';
+		width: 7.2ch;
+	}
+	60%,
+	75% {
+		width: 0ch;
+	}
+	80%,
+	95% {
+		content: 'Diseñador';
+		width: 7.5ch;
+	}
+}
+
+@keyframes blinking {
+	100% {
+		opacity: 0;
+	}
 }
 
 /* Servicios Index */
