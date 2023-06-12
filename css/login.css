@@ -37,12 +37,12 @@ a:hover {
 }
 
 .form {
-	background: #0d1135;
+	background: #1b2a41;
 	padding: 40px;
 	max-width: 600px;
 	margin: 40px auto;
-	border-radius: 20px;
-	box-shadow: 10px 15px 15px rgba(54, 54, 54, 0.3);
+	/* border-radius: 20px; */
+	box-shadow: 10px 15px 15px rgb(31, 31, 31);
 }
 .tab-group {
 	list-style: none;
@@ -135,7 +135,6 @@ textarea {
 	cursor: pointer;
 	color: #fff;
 	transition: all 0.5s ease;
-	-webkit-appearance: none;
 }
 .button:hover,
 .button:focus {

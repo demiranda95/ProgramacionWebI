@@ -1,0 +1,46 @@
+{
+	"portfolio": [
+		{
+			"image": "../assets/img/portfolio1.jpg",
+			"title": "Vestuario",
+			"category": "Fotografia",
+			"link": "./portfolio/p1.html",
+			"updated": "2022"
+		},
+		{
+			"image": "../assets/img/portfolio2.jpg",
+			"title": "Fotomontaje Blik",
+			"category": "Publicidad",
+			"link": "./portfolio/p2.html",
+			"updated": "2021"
+		},
+		{
+			"image": "../assets/img/portfolio3.jpg",
+			"title": "Vehiculos Tunning",
+			"category": "Fotografia",
+			"link": "./portfolio/p3.html",
+			"updated": "2021"
+		},
+		{
+			"image": "../assets/img/portfolio4.jpg",
+			"title": "Paisajes",
+			"category": "Fotografia",
+			"link": "./portfolio/p4.html",
+			"updated": "2021"
+		},
+		{
+			"image": "../assets/img/portfolio5.jpg",
+			"title": "Retratos",
+			"category": "Publicidad",
+			"link": "./portfolio/p5.html",
+			"updated": "2021"
+		},
+		{
+			"image": "../assets/img/portfolio6.jpg",
+			"title": "Banners y Folletos",
+			"category": "Publicidad",
+			"link": "./portfolio/p6.html",
+			"updated": "2021"
+		}
+	]
+}
