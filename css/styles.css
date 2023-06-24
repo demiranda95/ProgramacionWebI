@@ -90,21 +90,6 @@ main {
 	z-index: 2;
 }
 
-/* .main-title {
-	position: absolute;
-	z-index: 2;
-	font-size: 4rem;
-	color: #fff;
-	text-align: center;
-	text-shadow: 2px 2px white;
-	text-transform: uppercase;
-	-webkit-text-stroke: 1px white;
-	-webkit-text-fill-color: transparent;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-} */
-
 .main-title {
 	position: absolute;
 	z-index: 2;
@@ -137,8 +122,6 @@ main {
 	animation: blinking 0.5s linear alternate infinite;
 }
 
-/* Reparar el salto en la anomacion despues de Diseñador */
-
 @keyframes animation {
 	0%,
 	15% {
@@ -168,6 +151,18 @@ main {
 @keyframes blinking {
 	100% {
 		opacity: 0;
+	}
+}
+
+@media (max-width: 1070px) {
+	.main-title {
+		font-size: 3rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.main-title {
+		font-size: 1rem;
 	}
 }
 
@@ -229,7 +224,11 @@ main {
 }
 
 /* Estilos Responsive */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
+	.title {
+		font-family: 'Oswald', sans-serif;
+		font-size: 2rem;
+	}
 	.services-wrapper {
 		display: grid;
 		grid-template-columns: 1fr;
@@ -292,9 +291,9 @@ main {
 	z-index: 1;
 }
 
-@media screen and (max-width: 1250px) {
-	.progress-bar {
-		width: 100%;
+@media screen and (max-width: 480px) {
+	.progress-text {
+		font-size: x-small;
 	}
 }
 .progress-0 {
@@ -404,7 +403,19 @@ main {
 	text-align: center;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
+	.portfolio2 .card-portfolio h2 {
+		font-size: 2rem;
+	}
+}
+
+@media (max-width: 920px) {
+	.portfolio2 .card-portfolio h2 {
+		font-size: 1.5rem;
+	}
+}
+
+@media (max-width: 768px) {
 	.portfolio {
 		margin: 0;
 	}
@@ -413,6 +424,14 @@ main {
 	}
 	.portfolio2 .card-portfolio {
 		padding: 30px;
+	}
+	.portfolio2 .card-portfolio h2 {
+		font-size: 5rem;
+	}
+}
+@media (max-width: 515px) {
+	.portfolio2 .card-portfolio h2 {
+		font-size: 3rem;
 	}
 }
 
@@ -490,12 +509,19 @@ main {
 	box-shadow: 10px 15px 15px gray;
 }
 
+@media (max-width: 768px) {
+	.services-title h1 {
+		font-size: 2rem;
+	}
+}
+
 /* Services Second */
 
 .services-second-grid {
+	height: 100vh;
 	position: relative;
 	display: grid;
-	grid-template-columns: 1.5fr repeat(2, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(2, 1fr);
 }
 .services-grid-1 {
@@ -511,21 +537,12 @@ main {
 	object-position: top;
 	position: relative;
 }
-.services-grid-2 {
-	grid-column: 2;
-	grid-row: 1 / span 2;
-	color: white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 10%;
-}
 .services-grid-3 {
 	background-image: url('../assets/img/md.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	grid-column: 1;
+	grid-column: 2;
 	grid-row: 1;
 	width: 100%;
 	height: 50vh;
@@ -538,7 +555,7 @@ main {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	grid-column: 3;
+	grid-column: 1;
 	grid-row: 2;
 	width: 100%;
 	height: 50vh;
@@ -551,7 +568,7 @@ main {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	grid-column: 3;
+	grid-column: 2;
 	grid-row: 2;
 	width: 100%;
 	height: 50vh;
@@ -670,8 +687,7 @@ main {
 	text-align: center;
 	z-index: 1;
 	animation: fade-in 1s ease-in-out;
-	/* Agrega un overlay */
-	background-color: rgba(0, 0, 0, 0.5); /* Aquí puedes ajustar el color y la opacidad del overlay */
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .portfolio-container {
@@ -728,7 +744,17 @@ main {
 	background-image: url(../assets/img/la-luna.jpg);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1072px) {
+	.portfolio-first-content-left p,
+	.portfolio-first-content-left span {
+		font-size: small;
+	}
+	.title-2 {
+		font-size: 1.5rem;
+	}
+}
+
+@media (max-width: 880px) {
 	.portfolio-container {
 		height: 100%;
 	}
@@ -773,7 +799,7 @@ main {
 	object-position: center;
 	object-fit: cover;
 	height: 80vh;
-	max-width: 40vw;
+	max-width: 100%;
 	width: 100%;
 }
 
@@ -928,6 +954,20 @@ main {
 	background-image: url('../assets/img/camera2.jpg');
 	background-position: top;
 	background-size: cover;
+}
+
+@media (max-width: 768px) {
+	.contact-container {
+		padding: 1rem;
+	}
+	.info-box-text {
+		font-size: small;
+	}
+}
+@media (max-width: 1082px) {
+	.social-icons {
+		flex-wrap: wrap;
+	}
 }
 
 /* Footer */

@@ -4,7 +4,6 @@ function isElementVisible(element) {
 	var windowHeight = window.innerHeight
 
 	return elementPosition.top < windowHeight
-	// && elementPosition.bottom >= 0
 }
 
 // Función para animar los elementos cuando lleguen a la vista
