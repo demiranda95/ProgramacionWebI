@@ -125,7 +125,7 @@ main {
 @keyframes animation {
 	0%,
 	15% {
-		content: 'Publicista';
+		content: ' Publicista';
 		width: 7.5ch;
 	}
 	20%,
@@ -134,7 +134,7 @@ main {
 	}
 	40%,
 	55% {
-		content: 'Fotografo';
+		content: ' Fotografo';
 		width: 7.2ch;
 	}
 	60%,
@@ -143,7 +143,7 @@ main {
 	}
 	80%,
 	95% {
-		content: 'Diseñador';
+		content: ' Diseñador';
 		width: 7.5ch;
 	}
 }
